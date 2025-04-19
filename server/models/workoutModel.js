@@ -9,7 +9,7 @@ const workoutSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    sets: {
+    load: {
         type: Number,
         required: true,
     },

@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 
 // db connection
 import './db/connection.js';
@@ -7,6 +8,7 @@ const app = express();
 
 // middlewares
 app.use(express.json());
+app.use(cors());
 
 // testing port
 app.get('/', (_, res) => {
